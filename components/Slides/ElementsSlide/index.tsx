@@ -15,8 +15,8 @@ export default function ElementsSlide(props: ElementsSlideProps): JSX.Element {
                         <div className={styles.element} key={x.grid_item_title[0].text}>
                             <div className={styles.icon}>
                                 <Image
-                                    width={50}
-                                    height={50}
+                                    width={125}
+                                    height={125}
                                     objectFit="contain"
                                     src={x.grid_item_thumbnail.url!}
                                     alt={x.grid_item_thumbnail.alt!}
