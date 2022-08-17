@@ -16,6 +16,8 @@ import KeyFiguresSlide from "./KeyFiguresSlide";
 import ChartSlide from "./ChartSlide";
 import ErrorSlide from "./ErrorSlide";
 import BaseSlide from "../Shared/BaseSlide";
+import FigmaSlide from "./FigmaSlide";
+import ImageSlide from "./ImageSlide";
 
 export interface ISlide {
     dark_theme_enabled: BooleanField;
@@ -48,7 +50,9 @@ function setCurrentSlide(slice: Slice): JSX.Element {
         elements_alt_slide: <ElementsAltSlide content={{ ...content, elements: items }} />,
         quote_slide: <QuoteSlide content={content} />,
         key_figures_slide: <KeyFiguresSlide content={{ ...content, key_figures: items }} />,
-        chart_slide: <ChartSlide content={{ ...content, chart_items: items }} />
+        chart_slide: <ChartSlide content={{ ...content, chart_items: items }} />,
+        figma_slide: <FigmaSlide content={content} />,
+        image_slide: <ImageSlide content={content} />
     });
 
     return componentMap[slice_type] ?? <ErrorSlide />;
