@@ -1,0 +1,20 @@
+@use "../../styles/variables/media-queries" as *;
+
+// Styles overrides
+
+.our_team {
+    img {
+        width: 125px;
+        height: 125px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.how_we_started {
+    @media #{$min-width-lg} {
+        img {
+            height: 350px;
+        }
+    }
+}

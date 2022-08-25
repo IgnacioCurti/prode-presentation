@@ -113,6 +113,13 @@
                                     "placeholder": "Set the chapter name"
                                 }
                             },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
                             "slide_navigation_id": {
                                 "type": "StructuredText",
                                 "config": {
@@ -187,6 +194,13 @@
                                     "placeholder": "Set the chapter name"
                                 }
                             },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
                             "slide_navigation_id": {
                                 "type": "StructuredText",
                                 "config": {
@@ -244,6 +258,13 @@
                                     "single": "heading4",
                                     "label": "Chapter name",
                                     "placeholder": "Set the chapter name"
+                                }
+                            },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
                                 }
                             },
                             "slide_navigation_id": {
@@ -313,6 +334,13 @@
                                     "placeholder": "Set the chapter name"
                                 }
                             },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
                             "slide_navigation_id": {
                                 "type": "StructuredText",
                                 "config": {
@@ -372,6 +400,13 @@
                                     "single": "heading4",
                                     "label": "Chapter name",
                                     "placeholder": "Set the chapter name"
+                                }
+                            },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
                                 }
                             },
                             "slide_navigation_id": {
@@ -448,6 +483,13 @@
                                     "placeholder": "Set the chapter name"
                                 }
                             },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
                             "slide_navigation_id": {
                                 "type": "StructuredText",
                                 "config": {
@@ -504,6 +546,13 @@
                                     "single": "heading4",
                                     "label": "Chapter name",
                                     "placeholder": "Set the chapter name"
+                                }
+                            },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
                                 }
                             },
                             "slide_navigation_id": {
@@ -597,6 +646,13 @@
                                     "placeholder": "Set the chapter name"
                                 }
                             },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
                             "slide_navigation_id": {
                                 "type": "StructuredText",
                                 "config": {
@@ -664,6 +720,13 @@
                                     "placeholder": "Set the chapter name"
                                 }
                             },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
                             "slide_navigation_id": {
                                 "type": "StructuredText",
                                 "config": {
@@ -729,6 +792,13 @@
                                     "single": "heading4",
                                     "label": "Chapter name",
                                     "placeholder": "Set the chapter name"
+                                }
+                            },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
                                 }
                             },
                             "slide_navigation_id": {
@@ -819,6 +889,13 @@
                                     "single": "heading4",
                                     "label": "Chapter name",
                                     "placeholder": "Set the chapter name"
+                                }
+                            },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
                                 }
                             },
                             "slide_navigation_id": {
@@ -913,6 +990,13 @@
                                     "placeholder": "Set the chapter name"
                                 }
                             },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
                             "slide_navigation_id": {
                                 "type": "StructuredText",
                                 "config": {
@@ -979,6 +1063,120 @@
                                 }
                             }
                         }
+                    },
+                    "figma_slide": {
+                        "type": "Slice",
+                        "fieldset": "Figma slide",
+                        "description": "A slide with the figma prototype",
+                        "icon": "book",
+                        "non-repeat": {
+                            "dark_theme_enabled": {
+                                "type": "Boolean",
+                                "config": {
+                                    "placeholder_false": "disabled",
+                                    "placeholder_true": "enabled",
+                                    "default_value": true,
+                                    "label": "Dark theme enabled"
+                                }
+                            },
+                            "chapter_name": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "single": "heading4",
+                                    "label": "Chapter name",
+                                    "placeholder": "Set the chapter name"
+                                }
+                            },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
+                            "slide_navigation_id": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "single": "heading4",
+                                    "label": "Navigation ID",
+                                    "placeholder": "Set the identifier for the navigation"
+                                }
+                            },
+                            "slide_figma_embed": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "single": "paragraph",
+                                    "label": "Figma Embed",
+                                    "placeholder": "Add figma embed"
+                                }
+                            }
+                        },
+                        "repeat": {}
+                    },
+                    "image_slide": {
+                        "type": "Slice",
+                        "fieldset": "Image slide",
+                        "description": "A slide with an image",
+                        "icon": "book",
+                        "non-repeat": {
+                            "dark_theme_enabled": {
+                                "type": "Boolean",
+                                "config": {
+                                    "placeholder_false": "disabled",
+                                    "placeholder_true": "enabled",
+                                    "default_value": true,
+                                    "label": "Dark theme enabled"
+                                }
+                            },
+                            "chapter_name": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "single": "heading4",
+                                    "label": "Chapter name",
+                                    "placeholder": "Set the chapter name"
+                                }
+                            },
+                            "slide_class_name_override": {
+                                "type": "Text",
+                                "config": {
+                                    "label": "Class name override",
+                                    "placeholder": "A CSS class name override"
+                                }
+                            },
+                            "slide_navigation_id": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "single": "heading4",
+                                    "label": "Navigation ID",
+                                    "placeholder": "Set the identifier for the navigation"
+                                }
+                            },
+                            "slide_title": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "single": "heading2",
+                                    "label": "Slide title",
+                                    "placeholder": "Add the title"
+                                }
+                            },
+                            "slide_image": {
+                                "type": "Image",
+                                "config": {
+                                    "constraint": {},
+                                    "thumbnails": [],
+                                    "label": "Image"
+                                }
+                            },
+                            "slide_bg_pattern": {
+                                "type": "Image",
+                                "config": {
+                                    "constraint": {},
+                                    "thumbnails": [],
+                                    "label": "Custom background pattern"
+                                }
+                            }
+                        },
+                        "repeat": {}
                     }
                 }
             }

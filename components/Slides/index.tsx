@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import { Slice, BooleanField, TitleField, ImageField } from "@prismicio/types";
 import { NavigationContext } from "@app/contexts/navigation";
 import { GlobalDataContext } from "@app/contexts/global-data";
@@ -18,6 +18,7 @@ import ErrorSlide from "./ErrorSlide";
 import BaseSlide from "../Shared/BaseSlide";
 import FigmaSlide from "./FigmaSlide";
 import ImageSlide from "./ImageSlide";
+import styles from "./BaseSlide.module.scss";
 
 export interface ISlide {
     dark_theme_enabled: BooleanField;
@@ -64,8 +65,19 @@ function setCurrentSlide(slice: Slice): JSX.Element {
 export default function Slide(): JSX.Element {
     const { currentIndex } = useContext(NavigationContext);
     const { body } = useContext(GlobalDataContext);
+    const slide = useMemo(() => body[currentIndex], [body, currentIndex]);
+    const styleOverride = useMemo(() => {
+        const { chapter_name, slide_class_name_override } = slide.primary;
+
+        return (
+            (slide_class_name_override as any) ??
+            (chapter_name as any)?.[0].text.split(" ").join("_").toLowerCase()
+        );
+    }, [slide]);
 
     return (
-        <BaseSlide key={`slide_${currentIndex}`}>{setCurrentSlide(body[currentIndex])}</BaseSlide>
+        <BaseSlide key={`slide_${currentIndex}`} className={styles[styleOverride]}>
+            {setCurrentSlide(slide)}
+        </BaseSlide>
     );
 }
