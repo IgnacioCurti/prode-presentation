@@ -16,8 +16,8 @@
 .team {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    grid-gap: 100px 50px;
-    margin-top: 125px;
+    grid-gap: 50px 25px;
+    margin-top: 50px;
 
     @media #{$max-width-xl} {
         grid-gap: 50px;
